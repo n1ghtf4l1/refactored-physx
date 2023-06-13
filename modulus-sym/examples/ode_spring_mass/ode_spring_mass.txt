@@ -1,0 +1,149 @@
+┌──(n1ghtf4l1@hpenvylaptop15ep0xxx)-[~/Workspace/modulus-sym/examples/ode_spring_mass]-(conda_env:phy6ml)(git(main))  
+└─$  python spring_mass_solver.py
+/home/n1ghtf4l1/miniconda3/envs/phy6ml/lib/python3.8/site-packages/hydra/_internal/hydra.py:119: UserWarning: Future Hydra versions will no longer change working directory at job runtime by default.
+See https://hydra.cc/docs/1.2/upgrades/1.1_to_1.2/changes_to_job_working_dir/ for more information.
+  ret = run_job(
+[09:27:36] - JIT using the NVFuser TorchScript backend
+[09:27:36] - JitManager: {'_enabled': True, '_arch_mode': <JitArchMode.ONLY_ACTIVATION: 1>, '_use_nvfuser': True, '_autograd_nodes': False}
+[09:27:36] - GraphManager: {'_func_arch': False, '_debug': False, '_func_arch_allow_partial_hessian': True}
+[09:27:37] - Installed PyTorch version 2.0.1+cu117 is not TorchScript supported in Modulus. Version 1.14.0a0+410ce96 is officially supported.
+[09:27:37] - attempting to restore from: outputs/spring_mass_solver
+[09:27:37] - optimizer checkpoint not found
+[09:27:37] - model spring_mass_network.0.pth not found
+[09:27:41] - [step:          0] record constraint batch time:  6.879e-01s
+[09:27:41] - [step:          0] record validators time:  2.281e-01s
+[09:27:41] - [step:          0] saved checkpoint to outputs/spring_mass_solver
+[09:27:41] - [step:          0] loss:  7.213e+00
+[09:27:44] - Attempting cuda graph building, this may take a bit...
+[09:27:46] - [step:        100] loss:  1.830e-01, time/iteration:  5.307e+01 ms
+[09:27:50] - [step:        200] loss:  1.126e-01, time/iteration:  3.307e+01 ms
+[09:27:53] - [step:        300] loss:  1.110e-01, time/iteration:  3.305e+01 ms
+[09:27:56] - [step:        400] loss:  9.660e-02, time/iteration:  3.309e+01 ms
+[09:28:00] - [step:        500] loss:  9.286e-02, time/iteration:  3.321e+01 ms
+[09:28:03] - [step:        600] loss:  8.796e-02, time/iteration:  3.324e+01 ms
+[09:28:06] - [step:        700] loss:  8.743e-02, time/iteration:  3.327e+01 ms
+[09:28:10] - [step:        800] loss:  7.958e-02, time/iteration:  3.327e+01 ms
+[09:28:13] - [step:        900] loss:  7.934e-02, time/iteration:  3.333e+01 ms
+[09:28:16] - [step:       1000] record constraint batch time:  3.662e-02s
+[09:28:16] - [step:       1000] record validators time:  4.488e-02s
+[09:28:16] - [step:       1000] saved checkpoint to outputs/spring_mass_solver
+[09:28:16] - [step:       1000] loss:  8.173e-02, time/iteration:  3.499e+01 ms
+[09:28:20] - [step:       1100] loss:  7.814e-02, time/iteration:  3.330e+01 ms
+[09:28:23] - [step:       1200] loss:  7.691e-02, time/iteration:  3.334e+01 ms
+[09:28:26] - [step:       1300] loss:  7.762e-02, time/iteration:  3.336e+01 ms
+[09:28:30] - [step:       1400] loss:  7.503e-02, time/iteration:  3.348e+01 ms
+[09:28:33] - [step:       1500] loss:  7.205e-02, time/iteration:  3.328e+01 ms
+[09:28:36] - [step:       1600] loss:  6.634e-02, time/iteration:  3.335e+01 ms
+[09:28:40] - [step:       1700] loss:  6.809e-02, time/iteration:  3.329e+01 ms
+[09:28:43] - [step:       1800] loss:  6.670e-02, time/iteration:  3.331e+01 ms
+[09:28:46] - [step:       1900] loss:  6.687e-02, time/iteration:  3.336e+01 ms
+[09:28:50] - [step:       2000] record constraint batch time:  2.276e-02s
+[09:28:50] - [step:       2000] record validators time:  4.509e-02s
+[09:28:50] - [step:       2000] saved checkpoint to outputs/spring_mass_solver
+[09:28:50] - [step:       2000] loss:  7.048e-02, time/iteration:  3.478e+01 ms
+[09:28:53] - [step:       2100] loss:  6.495e-02, time/iteration:  3.333e+01 ms
+[09:28:57] - [step:       2200] loss:  7.235e-02, time/iteration:  3.363e+01 ms
+[09:29:00] - [step:       2300] loss:  6.246e-02, time/iteration:  3.361e+01 ms
+[09:29:03] - [step:       2400] loss:  6.420e-02, time/iteration:  3.365e+01 ms
+[09:29:07] - [step:       2500] loss:  6.334e-02, time/iteration:  3.365e+01 ms
+[09:29:10] - [step:       2600] loss:  6.420e-02, time/iteration:  3.366e+01 ms
+[09:29:13] - [step:       2700] loss:  6.470e-02, time/iteration:  3.365e+01 ms
+[09:29:17] - [step:       2800] loss:  6.159e-02, time/iteration:  3.370e+01 ms
+[09:29:20] - [step:       2900] loss:  6.168e-02, time/iteration:  3.361e+01 ms
+[09:29:24] - [step:       3000] record constraint batch time:  2.319e-02s
+[09:29:24] - [step:       3000] record validators time:  4.513e-02s
+[09:29:24] - [step:       3000] saved checkpoint to outputs/spring_mass_solver
+[09:29:24] - [step:       3000] loss:  5.998e-02, time/iteration:  3.516e+01 ms
+[09:29:27] - [step:       3100] loss:  5.600e-02, time/iteration:  3.366e+01 ms
+[09:29:30] - [step:       3200] loss:  5.439e-02, time/iteration:  3.368e+01 ms
+[09:29:34] - [step:       3300] loss:  5.309e-02, time/iteration:  3.371e+01 ms
+[09:29:37] - [step:       3400] loss:  5.523e-02, time/iteration:  3.368e+01 ms
+[09:29:41] - [step:       3500] loss:  4.986e-02, time/iteration:  3.373e+01 ms
+[09:29:44] - [step:       3600] loss:  4.822e-02, time/iteration:  3.369e+01 ms
+[09:29:47] - [step:       3700] loss:  5.391e-02, time/iteration:  3.372e+01 ms
+[09:29:51] - [step:       3800] loss:  5.016e-02, time/iteration:  3.372e+01 ms
+[09:29:54] - [step:       3900] loss:  4.160e-02, time/iteration:  3.376e+01 ms
+[09:29:58] - [step:       4000] record constraint batch time:  2.562e-02s
+[09:29:58] - [step:       4000] record validators time:  4.553e-02s
+[09:29:58] - [step:       4000] saved checkpoint to outputs/spring_mass_solver
+[09:29:58] - [step:       4000] loss:  4.185e-02, time/iteration:  3.540e+01 ms
+[09:30:01] - [step:       4100] loss:  4.100e-02, time/iteration:  3.380e+01 ms
+[09:30:04] - [step:       4200] loss:  3.583e-02, time/iteration:  3.400e+01 ms
+[09:30:08] - [step:       4300] loss:  3.332e-02, time/iteration:  3.405e+01 ms
+[09:30:11] - [step:       4400] loss:  2.692e-02, time/iteration:  3.406e+01 ms
+[09:30:15] - [step:       4500] loss:  2.312e-02, time/iteration:  3.397e+01 ms
+[09:30:18] - [step:       4600] loss:  2.252e-02, time/iteration:  3.487e+01 ms
+[09:30:21] - [step:       4700] loss:  2.096e-02, time/iteration:  3.426e+01 ms
+[09:30:25] - [step:       4800] loss:  1.491e-02, time/iteration:  3.405e+01 ms
+[09:30:28] - [step:       4900] loss:  1.294e-02, time/iteration:  3.457e+01 ms
+[09:30:32] - [step:       5000] record constraint batch time:  2.340e-02s
+[09:30:32] - [step:       5000] record validators time:  4.534e-02s
+[09:30:32] - [step:       5000] saved checkpoint to outputs/spring_mass_solver
+[09:30:32] - [step:       5000] loss:  1.089e-02, time/iteration:  3.585e+01 ms
+[09:30:35] - [step:       5100] loss:  1.009e-02, time/iteration:  3.408e+01 ms
+[09:30:39] - [step:       5200] loss:  7.230e-03, time/iteration:  3.425e+01 ms
+[09:30:42] - [step:       5300] loss:  7.242e-03, time/iteration:  3.425e+01 ms
+[09:30:46] - [step:       5400] loss:  4.265e-03, time/iteration:  3.454e+01 ms
+[09:30:49] - [step:       5500] loss:  3.081e-03, time/iteration:  3.444e+01 ms
+[09:30:53] - [step:       5600] loss:  3.013e-03, time/iteration:  3.442e+01 ms
+[09:30:56] - [step:       5700] loss:  2.151e-03, time/iteration:  3.448e+01 ms
+[09:30:59] - [step:       5800] loss:  1.516e-03, time/iteration:  3.494e+01 ms
+[09:31:03] - [step:       5900] loss:  1.318e-03, time/iteration:  3.498e+01 ms
+[09:31:07] - [step:       6000] record constraint batch time:  2.705e-02s
+[09:31:07] - [step:       6000] record validators time:  4.847e-02s
+[09:31:07] - [step:       6000] saved checkpoint to outputs/spring_mass_solver
+[09:31:07] - [step:       6000] loss:  1.779e-03, time/iteration:  3.651e+01 ms
+[09:31:10] - [step:       6100] loss:  9.003e-04, time/iteration:  3.487e+01 ms
+[09:31:14] - [step:       6200] loss:  7.791e-04, time/iteration:  3.492e+01 ms
+[09:31:17] - [step:       6300] loss:  7.051e-04, time/iteration:  3.440e+01 ms
+[09:31:21] - [step:       6400] loss:  7.825e-04, time/iteration:  3.476e+01 ms
+[09:31:24] - [step:       6500] loss:  7.440e-04, time/iteration:  3.441e+01 ms
+[09:31:27] - [step:       6600] loss:  5.456e-04, time/iteration:  3.450e+01 ms
+[09:31:31] - [step:       6700] loss:  6.715e-04, time/iteration:  3.479e+01 ms
+[09:31:34] - [step:       6800] loss:  4.524e-04, time/iteration:  3.463e+01 ms
+[09:31:38] - [step:       6900] loss:  2.902e-04, time/iteration:  3.435e+01 ms
+[09:31:41] - [step:       7000] record constraint batch time:  2.546e-02s
+[09:31:41] - [step:       7000] record validators time:  4.723e-02s
+[09:31:41] - [step:       7000] saved checkpoint to outputs/spring_mass_solver
+[09:31:41] - [step:       7000] loss:  3.784e-04, time/iteration:  3.592e+01 ms
+[09:31:45] - [step:       7100] loss:  4.329e-04, time/iteration:  3.463e+01 ms
+[09:31:48] - [step:       7200] loss:  3.291e-04, time/iteration:  3.436e+01 ms
+[09:31:52] - [step:       7300] loss:  3.172e-04, time/iteration:  3.434e+01 ms
+[09:31:55] - [step:       7400] loss:  3.387e-04, time/iteration:  3.445e+01 ms
+[09:31:59] - [step:       7500] loss:  2.784e-04, time/iteration:  3.498e+01 ms
+[09:32:02] - [step:       7600] loss:  1.614e-04, time/iteration:  3.477e+01 ms
+[09:32:06] - [step:       7700] loss:  2.772e-04, time/iteration:  3.489e+01 ms
+[09:32:09] - [step:       7800] loss:  2.948e-04, time/iteration:  3.572e+01 ms
+[09:32:13] - [step:       7900] loss:  4.196e-04, time/iteration:  3.553e+01 ms
+[09:32:16] - [step:       8000] record constraint batch time:  2.917e-02s
+[09:32:16] - [step:       8000] record validators time:  4.848e-02s
+[09:32:16] - [step:       8000] saved checkpoint to outputs/spring_mass_solver
+[09:32:16] - [step:       8000] loss:  2.103e-04, time/iteration:  3.724e+01 ms
+[09:32:20] - [step:       8100] loss:  1.794e-04, time/iteration:  3.533e+01 ms
+[09:32:24] - [step:       8200] loss:  3.023e-04, time/iteration:  3.540e+01 ms
+[09:32:27] - [step:       8300] loss:  2.137e-04, time/iteration:  3.523e+01 ms
+[09:32:31] - [step:       8400] loss:  1.278e-04, time/iteration:  3.623e+01 ms
+[09:32:34] - [step:       8500] loss:  2.521e-04, time/iteration:  3.646e+01 ms
+[09:32:38] - [step:       8600] loss:  1.670e-04, time/iteration:  3.640e+01 ms
+[09:32:42] - [step:       8700] loss:  1.804e-04, time/iteration:  3.657e+01 ms
+[09:32:45] - [step:       8800] loss:  2.434e-04, time/iteration:  3.682e+01 ms
+[09:32:49] - [step:       8900] loss:  2.735e-04, time/iteration:  3.729e+01 ms
+[09:32:53] - [step:       9000] record constraint batch time:  3.873e-02s
+[09:32:53] - [step:       9000] record validators time:  5.716e-02s
+[09:32:53] - [step:       9000] saved checkpoint to outputs/spring_mass_solver
+[09:32:53] - [step:       9000] loss:  2.088e-04, time/iteration:  3.898e+01 ms
+[09:32:57] - [step:       9100] loss:  1.299e-04, time/iteration:  3.989e+01 ms
+[09:33:01] - [step:       9200] loss:  1.455e-04, time/iteration:  3.847e+01 ms
+[09:33:04] - [step:       9300] loss:  1.055e-04, time/iteration:  3.691e+01 ms
+[09:33:08] - [step:       9400] loss:  1.969e-04, time/iteration:  3.692e+01 ms
+[09:33:12] - [step:       9500] loss:  1.525e-04, time/iteration:  3.692e+01 ms
+[09:33:16] - [step:       9600] loss:  1.107e-04, time/iteration:  3.686e+01 ms
+[09:33:19] - [step:       9700] loss:  1.538e-04, time/iteration:  3.693e+01 ms
+[09:33:23] - [step:       9800] loss:  1.238e-04, time/iteration:  3.695e+01 ms
+[09:33:27] - [step:       9900] loss:  1.880e-04, time/iteration:  3.697e+01 ms
+[09:33:30] - [step:      10000] record constraint batch time:  2.579e-02s
+[09:33:30] - [step:      10000] record validators time:  5.135e-02s
+[09:33:31] - [step:      10000] saved checkpoint to outputs/spring_mass_solver
+[09:33:31] - [step:      10000] loss:  8.364e-05, time/iteration:  3.860e+01 ms
+[09:33:31] - [step:      10000] reached maximum training steps, finished training!
+ Command executed in 359.037s                                                                       
