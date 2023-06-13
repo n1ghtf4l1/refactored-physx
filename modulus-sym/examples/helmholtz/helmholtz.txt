@@ -1,0 +1,277 @@
+┌──(n1ghtf4l1@hpenvylaptop15ep0xxx)-[~]-(conda_env:) 
+└─$  conda activate phy6ml
+ Command executed in 0.265s                                                                         
+
+┌──(n1ghtf4l1@hpenvylaptop15ep0xxx)-[~]-(conda_env:phy6ml) 
+└─$  cd Workspace/modulus-sym/examples/helmholtz 
+ Command executed in 0.854s                                                                         
+
+┌──(n1ghtf4l1@hpenvylaptop15ep0xxx)-[~/Workspace/modulus-sym/examples/helmholtz]-(conda_env:phy6ml)(git(main))  
+└─$  python helmholtz.py
+/home/n1ghtf4l1/miniconda3/envs/phy6ml/lib/python3.8/site-packages/hydra/_internal/hydra.py:119: UserWarning: Future Hydra versions will no longer change working directory at job runtime by default.
+See https://hydra.cc/docs/1.2/upgrades/1.1_to_1.2/changes_to_job_working_dir/ for more information.
+  ret = run_job(
+[08:22:07] - JIT using the NVFuser TorchScript backend
+[08:22:07] - JitManager: {'_enabled': True, '_arch_mode': <JitArchMode.ONLY_ACTIVATION: 1>, '_use_nvfuser': True, '_autograd_nodes': False}
+[08:22:07] - GraphManager: {'_func_arch': False, '_debug': False, '_func_arch_allow_partial_hessian': True}
+[08:22:10] - Installed PyTorch version 2.0.1+cu117 is not TorchScript supported in Modulus. Version 1.14.0a0+410ce96 is officially supported.
+[08:22:10] - attempting to restore from: outputs/helmholtz
+[08:22:10] - optimizer checkpoint not found
+[08:22:10] - model wave_network.0.pth not found
+[08:22:13] - [step:          0] record constraint batch time:  9.383e-01s
+[08:22:15] - [step:          0] record validators time:  2.029e+00s
+[08:22:15] - [step:          0] saved checkpoint to outputs/helmholtz
+[08:22:15] - [step:          0] loss:  1.020e+04
+[08:22:26] - Attempting cuda graph building, this may take a bit...
+[08:23:03] - [step:        100] loss:  1.022e+04, time/iteration:  4.809e+02 ms
+[08:23:48] - [step:        200] loss:  7.690e+01, time/iteration:  4.538e+02 ms
+[08:24:34] - [step:        300] loss:  1.706e+01, time/iteration:  4.545e+02 ms
+[08:25:09] - [step:        400] loss:  1.074e+01, time/iteration:  3.479e+02 ms
+[08:25:20] - [step:        500] loss:  1.175e+01, time/iteration:  1.174e+02 ms
+[08:25:43] - [step:        600] loss:  3.236e+00, time/iteration:  2.318e+02 ms
+[08:26:29] - [step:        700] loss:  6.543e+00, time/iteration:  4.555e+02 ms
+[08:27:14] - [step:        800] loss:  7.511e+00, time/iteration:  4.555e+02 ms
+[08:28:00] - [step:        900] loss:  1.996e+00, time/iteration:  4.551e+02 ms
+[08:28:48] - [step:       1000] record validators time:  1.773e+00s
+[08:28:48] - [step:       1000] saved checkpoint to outputs/helmholtz
+[08:28:48] - [step:       1000] loss:  1.901e+00, time/iteration:  4.789e+02 ms
+[08:29:33] - [step:       1100] loss:  1.541e+00, time/iteration:  4.548e+02 ms
+[08:30:19] - [step:       1200] loss:  1.480e+00, time/iteration:  4.550e+02 ms
+[08:31:04] - [step:       1300] loss:  8.232e-01, time/iteration:  4.551e+02 ms
+[08:31:50] - [step:       1400] loss:  5.175e+00, time/iteration:  4.550e+02 ms
+[08:32:35] - [step:       1500] loss:  1.110e+00, time/iteration:  4.549e+02 ms
+[08:33:21] - [step:       1600] loss:  1.761e+01, time/iteration:  4.549e+02 ms
+[08:34:06] - [step:       1700] loss:  1.003e+00, time/iteration:  4.549e+02 ms
+[08:34:52] - [step:       1800] loss:  1.258e+00, time/iteration:  4.549e+02 ms
+[08:35:37] - [step:       1900] loss:  1.852e+00, time/iteration:  4.550e+02 ms
+[08:36:23] - [step:       2000] record constraint batch time:  1.535e-01s
+[08:36:25] - [step:       2000] record validators time:  1.813e+00s
+[08:36:25] - [step:       2000] saved checkpoint to outputs/helmholtz
+[08:36:25] - [step:       2000] loss:  1.675e+00, time/iteration:  4.805e+02 ms
+[08:37:11] - [step:       2100] loss:  3.218e-01, time/iteration:  4.551e+02 ms
+[08:37:56] - [step:       2200] loss:  3.524e-01, time/iteration:  4.551e+02 ms
+[08:38:42] - [step:       2300] loss:  1.320e+01, time/iteration:  4.552e+02 ms
+[08:39:27] - [step:       2400] loss:  3.611e-01, time/iteration:  4.553e+02 ms
+[08:40:13] - [step:       2500] loss:  2.141e+00, time/iteration:  4.553e+02 ms
+[08:40:58] - [step:       2600] loss:  4.301e-01, time/iteration:  4.550e+02 ms
+[08:41:44] - [step:       2700] loss:  6.586e-01, time/iteration:  4.551e+02 ms
+[08:42:29] - [step:       2800] loss:  4.872e-01, time/iteration:  4.549e+02 ms
+[08:43:15] - [step:       2900] loss:  1.650e-01, time/iteration:  4.550e+02 ms
+[08:44:03] - [step:       3000] record validators time:  1.750e+00s
+[08:44:03] - [step:       3000] saved checkpoint to outputs/helmholtz
+[08:44:03] - [step:       3000] loss:  4.082e-01, time/iteration:  4.784e+02 ms
+[08:44:48] - [step:       3100] loss:  1.497e-01, time/iteration:  4.549e+02 ms
+[08:45:34] - [step:       3200] loss:  4.209e-01, time/iteration:  4.550e+02 ms
+[08:46:19] - [step:       3300] loss:  6.254e-01, time/iteration:  4.549e+02 ms
+[08:47:05] - [step:       3400] loss:  2.676e-01, time/iteration:  4.551e+02 ms
+[08:47:50] - [step:       3500] loss:  5.087e-01, time/iteration:  4.551e+02 ms
+[08:48:36] - [step:       3600] loss:  1.671e-01, time/iteration:  4.552e+02 ms
+[08:49:21] - [step:       3700] loss:  9.536e-01, time/iteration:  4.552e+02 ms
+[08:50:07] - [step:       3800] loss:  5.084e-01, time/iteration:  4.552e+02 ms
+[08:50:52] - [step:       3900] loss:  5.763e-01, time/iteration:  4.551e+02 ms
+[08:51:39] - [step:       4000] record constraint batch time:  1.524e-01s
+[08:51:40] - [step:       4000] record validators time:  1.751e+00s
+[08:51:40] - [step:       4000] saved checkpoint to outputs/helmholtz
+[08:51:40] - [step:       4000] loss:  2.035e-01, time/iteration:  4.802e+02 ms
+[08:52:26] - [step:       4100] loss:  5.180e-01, time/iteration:  4.552e+02 ms
+[08:53:11] - [step:       4200] loss:  1.314e+00, time/iteration:  4.552e+02 ms
+[08:53:36] - [step:       4300] loss:  9.826e-02, time/iteration:  2.489e+02 ms
+[08:53:48] - [step:       4400] loss:  1.538e-01, time/iteration:  1.178e+02 ms
+[08:54:00] - [step:       4500] loss:  8.198e-01, time/iteration:  1.191e+02 ms
+[08:54:12] - [step:       4600] loss:  1.195e-01, time/iteration:  1.198e+02 ms
+[08:54:24] - [step:       4700] loss:  5.012e-01, time/iteration:  1.199e+02 ms
+[08:54:36] - [step:       4800] loss:  1.023e+00, time/iteration:  1.199e+02 ms
+[08:54:48] - [step:       4900] loss:  1.067e+00, time/iteration:  1.201e+02 ms
+[08:55:01] - [step:       5000] record validators time:  8.153e-01s
+[08:55:01] - [step:       5000] saved checkpoint to outputs/helmholtz
+[08:55:01] - [step:       5000] loss:  9.941e-01, time/iteration:  1.350e+02 ms
+[08:55:14] - [step:       5100] loss:  8.333e-02, time/iteration:  1.212e+02 ms
+[08:55:26] - [step:       5200] loss:  4.476e-01, time/iteration:  1.215e+02 ms
+[08:55:38] - [step:       5300] loss:  7.933e-01, time/iteration:  1.215e+02 ms
+[08:55:50] - [step:       5400] loss:  1.855e-01, time/iteration:  1.212e+02 ms
+[08:56:02] - [step:       5500] loss:  7.694e-02, time/iteration:  1.213e+02 ms
+[08:56:14] - [step:       5600] loss:  1.047e-01, time/iteration:  1.216e+02 ms
+[08:56:27] - [step:       5700] loss:  1.434e+00, time/iteration:  1.221e+02 ms
+[08:56:39] - [step:       5800] loss:  3.438e-01, time/iteration:  1.221e+02 ms
+[08:56:51] - [step:       5900] loss:  3.061e-01, time/iteration:  1.221e+02 ms
+[08:57:04] - [step:       6000] record constraint batch time:  5.490e-02s
+[08:57:05] - [step:       6000] record validators time:  8.086e-01s
+[08:57:05] - [step:       6000] saved checkpoint to outputs/helmholtz
+[08:57:05] - [step:       6000] loss:  5.394e-01, time/iteration:  1.366e+02 ms
+[08:57:17] - [step:       6100] loss:  5.595e-02, time/iteration:  1.224e+02 ms
+[08:57:29] - [step:       6200] loss:  6.889e-02, time/iteration:  1.223e+02 ms
+[08:57:41] - [step:       6300] loss:  7.987e-02, time/iteration:  1.224e+02 ms
+[08:57:54] - [step:       6400] loss:  5.215e-02, time/iteration:  1.225e+02 ms
+[08:58:06] - [step:       6500] loss:  8.245e-02, time/iteration:  1.225e+02 ms
+[08:58:18] - [step:       6600] loss:  5.930e-02, time/iteration:  1.224e+02 ms
+[08:58:30] - [step:       6700] loss:  9.050e-02, time/iteration:  1.225e+02 ms
+[08:58:43] - [step:       6800] loss:  7.915e-02, time/iteration:  1.225e+02 ms
+[08:58:55] - [step:       6900] loss:  1.717e+00, time/iteration:  1.226e+02 ms
+[08:59:08] - [step:       7000] record validators time:  8.146e-01s
+[08:59:09] - [step:       7000] saved checkpoint to outputs/helmholtz
+[08:59:09] - [step:       7000] loss:  6.707e-02, time/iteration:  1.371e+02 ms
+[08:59:21] - [step:       7100] loss:  4.338e-02, time/iteration:  1.229e+02 ms
+[08:59:33] - [step:       7200] loss:  2.569e-01, time/iteration:  1.227e+02 ms
+[08:59:45] - [step:       7300] loss:  6.016e-01, time/iteration:  1.230e+02 ms
+[08:59:58] - [step:       7400] loss:  4.064e-02, time/iteration:  1.232e+02 ms
+[09:00:10] - [step:       7500] loss:  9.407e-02, time/iteration:  1.229e+02 ms
+[09:00:22] - [step:       7600] loss:  9.059e-02, time/iteration:  1.233e+02 ms
+[09:00:35] - [step:       7700] loss:  3.789e-01, time/iteration:  1.231e+02 ms
+[09:00:47] - [step:       7800] loss:  2.971e-01, time/iteration:  1.230e+02 ms
+[09:00:59] - [step:       7900] loss:  5.885e-02, time/iteration:  1.238e+02 ms
+[09:01:12] - [step:       8000] record constraint batch time:  5.628e-02s
+[09:01:13] - [step:       8000] record validators time:  8.158e-01s
+[09:01:13] - [step:       8000] saved checkpoint to outputs/helmholtz
+[09:01:13] - [step:       8000] loss:  4.351e-02, time/iteration:  1.398e+02 ms
+[09:01:26] - [step:       8100] loss:  3.978e-02, time/iteration:  1.242e+02 ms
+[09:01:38] - [step:       8200] loss:  9.525e-01, time/iteration:  1.239e+02 ms
+[09:01:50] - [step:       8300] loss:  3.636e-02, time/iteration:  1.238e+02 ms
+[09:02:03] - [step:       8400] loss:  3.117e-02, time/iteration:  1.237e+02 ms
+[09:02:15] - [step:       8500] loss:  4.922e-02, time/iteration:  1.238e+02 ms
+[09:02:28] - [step:       8600] loss:  1.315e-01, time/iteration:  1.241e+02 ms
+[09:02:40] - [step:       8700] loss:  2.031e-01, time/iteration:  1.238e+02 ms
+[09:02:52] - [step:       8800] loss:  3.111e-02, time/iteration:  1.236e+02 ms
+[09:03:05] - [step:       8900] loss:  4.817e-02, time/iteration:  1.238e+02 ms
+[09:03:19] - [step:       9000] record validators time:  8.594e-01s
+[09:03:19] - [step:       9000] saved checkpoint to outputs/helmholtz
+[09:03:19] - [step:       9000] loss:  1.557e-01, time/iteration:  1.391e+02 ms
+[09:03:31] - [step:       9100] loss:  1.395e-01, time/iteration:  1.238e+02 ms
+[09:03:43] - [step:       9200] loss:  7.879e-02, time/iteration:  1.240e+02 ms
+[09:03:56] - [step:       9300] loss:  5.954e-02, time/iteration:  1.242e+02 ms
+[09:04:08] - [step:       9400] loss:  5.512e-02, time/iteration:  1.245e+02 ms
+[09:04:21] - [step:       9500] loss:  3.248e-02, time/iteration:  1.241e+02 ms
+[09:04:33] - [step:       9600] loss:  2.896e-02, time/iteration:  1.244e+02 ms
+[09:04:46] - [step:       9700] loss:  5.782e-01, time/iteration:  1.241e+02 ms
+[09:04:58] - [step:       9800] loss:  2.885e-02, time/iteration:  1.242e+02 ms
+[09:05:10] - [step:       9900] loss:  2.631e-02, time/iteration:  1.241e+02 ms
+[09:05:24] - [step:      10000] record constraint batch time:  5.787e-02s
+[09:05:24] - [step:      10000] record validators time:  8.394e-01s
+[09:05:24] - [step:      10000] saved checkpoint to outputs/helmholtz
+[09:05:24] - [step:      10000] loss:  5.253e-02, time/iteration:  1.397e+02 ms
+[09:05:37] - [step:      10100] loss:  4.626e-02, time/iteration:  1.238e+02 ms
+[09:05:49] - [step:      10200] loss:  8.841e-02, time/iteration:  1.242e+02 ms
+[09:06:02] - [step:      10300] loss:  2.162e-02, time/iteration:  1.242e+02 ms
+[09:06:14] - [step:      10400] loss:  7.464e-02, time/iteration:  1.243e+02 ms
+[09:06:26] - [step:      10500] loss:  3.621e-02, time/iteration:  1.241e+02 ms
+[09:06:39] - [step:      10600] loss:  4.173e-02, time/iteration:  1.241e+02 ms
+[09:06:51] - [step:      10700] loss:  5.330e-02, time/iteration:  1.241e+02 ms
+[09:07:04] - [step:      10800] loss:  3.232e-02, time/iteration:  1.240e+02 ms
+[09:07:16] - [step:      10900] loss:  2.134e-01, time/iteration:  1.239e+02 ms
+[09:07:30] - [step:      11000] record validators time:  8.196e-01s
+[09:07:30] - [step:      11000] saved checkpoint to outputs/helmholtz
+[09:07:30] - [step:      11000] loss:  2.787e-02, time/iteration:  1.380e+02 ms
+[09:07:42] - [step:      11100] loss:  2.026e-02, time/iteration:  1.240e+02 ms
+[09:07:55] - [step:      11200] loss:  2.788e-02, time/iteration:  1.244e+02 ms
+[09:08:07] - [step:      11300] loss:  2.327e-02, time/iteration:  1.243e+02 ms
+[09:08:20] - [step:      11400] loss:  3.094e-02, time/iteration:  1.240e+02 ms
+[09:08:32] - [step:      11500] loss:  3.105e-02, time/iteration:  1.244e+02 ms
+[09:08:44] - [step:      11600] loss:  3.314e-02, time/iteration:  1.243e+02 ms
+[09:08:57] - [step:      11700] loss:  5.001e-02, time/iteration:  1.240e+02 ms
+[09:09:09] - [step:      11800] loss:  2.779e-02, time/iteration:  1.241e+02 ms
+[09:09:22] - [step:      11900] loss:  3.391e-02, time/iteration:  1.241e+02 ms
+[09:09:35] - [step:      12000] record constraint batch time:  5.853e-02s
+[09:09:36] - [step:      12000] record validators time:  8.158e-01s
+[09:09:36] - [step:      12000] saved checkpoint to outputs/helmholtz
+[09:09:36] - [step:      12000] loss:  1.939e-02, time/iteration:  1.391e+02 ms
+[09:09:48] - [step:      12100] loss:  3.505e-02, time/iteration:  1.242e+02 ms
+[09:10:00] - [step:      12200] loss:  1.873e-02, time/iteration:  1.241e+02 ms
+[09:10:13] - [step:      12300] loss:  2.189e-02, time/iteration:  1.243e+02 ms
+[09:10:25] - [step:      12400] loss:  4.108e-02, time/iteration:  1.239e+02 ms
+[09:10:38] - [step:      12500] loss:  2.783e-02, time/iteration:  1.242e+02 ms
+[09:10:50] - [step:      12600] loss:  6.251e-02, time/iteration:  1.245e+02 ms
+[09:11:02] - [step:      12700] loss:  2.082e-02, time/iteration:  1.245e+02 ms
+[09:11:15] - [step:      12800] loss:  4.777e-02, time/iteration:  1.243e+02 ms
+[09:11:27] - [step:      12900] loss:  3.999e-02, time/iteration:  1.241e+02 ms
+[09:11:41] - [step:      13000] record validators time:  8.209e-01s
+[09:11:41] - [step:      13000] saved checkpoint to outputs/helmholtz
+[09:11:41] - [step:      13000] loss:  2.490e-02, time/iteration:  1.395e+02 ms
+[09:11:54] - [step:      13100] loss:  2.430e-02, time/iteration:  1.240e+02 ms
+[09:12:06] - [step:      13200] loss:  2.088e-02, time/iteration:  1.239e+02 ms
+[09:12:18] - [step:      13300] loss:  1.858e-02, time/iteration:  1.239e+02 ms
+[09:12:31] - [step:      13400] loss:  2.808e-02, time/iteration:  1.238e+02 ms
+[09:12:43] - [step:      13500] loss:  2.615e-02, time/iteration:  1.239e+02 ms
+[09:12:56] - [step:      13600] loss:  2.506e-02, time/iteration:  1.238e+02 ms
+[09:13:08] - [step:      13700] loss:  1.851e-02, time/iteration:  1.241e+02 ms
+[09:13:20] - [step:      13800] loss:  3.006e-02, time/iteration:  1.238e+02 ms
+[09:13:33] - [step:      13900] loss:  2.541e-02, time/iteration:  1.237e+02 ms
+[09:13:46] - [step:      14000] record constraint batch time:  5.563e-02s
+[09:13:47] - [step:      14000] record validators time:  8.546e-01s
+[09:13:47] - [step:      14000] saved checkpoint to outputs/helmholtz
+[09:13:47] - [step:      14000] loss:  1.989e-02, time/iteration:  1.397e+02 ms
+[09:13:59] - [step:      14100] loss:  2.288e-02, time/iteration:  1.242e+02 ms
+[09:14:12] - [step:      14200] loss:  1.668e-02, time/iteration:  1.237e+02 ms
+[09:14:24] - [step:      14300] loss:  1.734e-02, time/iteration:  1.239e+02 ms
+[09:14:36] - [step:      14400] loss:  1.603e-02, time/iteration:  1.239e+02 ms
+[09:14:49] - [step:      14500] loss:  1.549e-02, time/iteration:  1.241e+02 ms
+[09:15:01] - [step:      14600] loss:  1.527e-02, time/iteration:  1.240e+02 ms
+[09:15:14] - [step:      14700] loss:  1.539e-02, time/iteration:  1.238e+02 ms
+[09:15:26] - [step:      14800] loss:  1.767e-02, time/iteration:  1.238e+02 ms
+[09:15:38] - [step:      14900] loss:  1.516e-02, time/iteration:  1.239e+02 ms
+[09:15:52] - [step:      15000] record validators time:  8.597e-01s
+[09:15:52] - [step:      15000] saved checkpoint to outputs/helmholtz
+[09:15:52] - [step:      15000] loss:  1.567e-02, time/iteration:  1.389e+02 ms
+[09:16:05] - [step:      15100] loss:  1.684e-02, time/iteration:  1.238e+02 ms
+[09:16:17] - [step:      15200] loss:  1.949e-02, time/iteration:  1.241e+02 ms
+[09:16:29] - [step:      15300] loss:  1.408e-02, time/iteration:  1.239e+02 ms
+[09:16:42] - [step:      15400] loss:  1.406e-02, time/iteration:  1.237e+02 ms
+[09:16:54] - [step:      15500] loss:  1.432e-02, time/iteration:  1.237e+02 ms
+[09:17:06] - [step:      15600] loss:  1.494e-02, time/iteration:  1.236e+02 ms
+[09:17:19] - [step:      15700] loss:  1.245e-02, time/iteration:  1.235e+02 ms
+[09:17:31] - [step:      15800] loss:  1.395e-02, time/iteration:  1.235e+02 ms
+[09:17:44] - [step:      15900] loss:  1.725e-02, time/iteration:  1.235e+02 ms
+[09:17:56] - [step:      16000] record constraint batch time:  5.635e-02s
+[09:17:57] - [step:      16000] record validators time:  8.179e-01s
+[09:17:57] - [step:      16000] saved checkpoint to outputs/helmholtz
+[09:17:57] - [step:      16000] loss:  1.343e-02, time/iteration:  1.381e+02 ms
+[09:18:10] - [step:      16100] loss:  1.298e-02, time/iteration:  1.236e+02 ms
+[09:18:22] - [step:      16200] loss:  1.456e-02, time/iteration:  1.235e+02 ms
+[09:18:34] - [step:      16300] loss:  1.324e-02, time/iteration:  1.235e+02 ms
+[09:18:47] - [step:      16400] loss:  1.363e-02, time/iteration:  1.236e+02 ms
+[09:18:59] - [step:      16500] loss:  1.279e-02, time/iteration:  1.239e+02 ms
+[09:19:12] - [step:      16600] loss:  1.146e-02, time/iteration:  1.242e+02 ms
+[09:19:24] - [step:      16700] loss:  1.778e-02, time/iteration:  1.242e+02 ms
+[09:19:36] - [step:      16800] loss:  1.252e-02, time/iteration:  1.240e+02 ms
+[09:19:49] - [step:      16900] loss:  1.278e-02, time/iteration:  1.244e+02 ms
+[09:20:03] - [step:      17000] record validators time:  8.464e-01s
+[09:20:03] - [step:      17000] saved checkpoint to outputs/helmholtz
+[09:20:03] - [step:      17000] loss:  1.403e-02, time/iteration:  1.399e+02 ms
+[09:20:15] - [step:      17100] loss:  1.122e-02, time/iteration:  1.246e+02 ms
+[09:20:28] - [step:      17200] loss:  1.195e-02, time/iteration:  1.246e+02 ms
+[09:20:40] - [step:      17300] loss:  1.162e-02, time/iteration:  1.241e+02 ms
+[09:20:53] - [step:      17400] loss:  1.262e-02, time/iteration:  1.241e+02 ms
+[09:21:05] - [step:      17500] loss:  1.171e-02, time/iteration:  1.238e+02 ms
+[09:21:17] - [step:      17600] loss:  1.209e-02, time/iteration:  1.237e+02 ms
+[09:21:30] - [step:      17700] loss:  1.322e-02, time/iteration:  1.237e+02 ms
+[09:21:42] - [step:      17800] loss:  1.096e-02, time/iteration:  1.238e+02 ms
+[09:21:54] - [step:      17900] loss:  1.052e-02, time/iteration:  1.241e+02 ms
+[09:22:08] - [step:      18000] record constraint batch time:  6.012e-02s
+[09:22:08] - [step:      18000] record validators time:  9.331e-01s
+[09:22:09] - [step:      18000] saved checkpoint to outputs/helmholtz
+[09:22:09] - [step:      18000] loss:  1.141e-02, time/iteration:  1.406e+02 ms
+[09:22:21] - [step:      18100] loss:  1.139e-02, time/iteration:  1.243e+02 ms
+[09:22:33] - [step:      18200] loss:  1.126e-02, time/iteration:  1.239e+02 ms
+[09:22:46] - [step:      18300] loss:  1.184e-02, time/iteration:  1.239e+02 ms
+[09:22:58] - [step:      18400] loss:  1.092e-02, time/iteration:  1.239e+02 ms
+[09:23:10] - [step:      18500] loss:  1.183e-02, time/iteration:  1.237e+02 ms
+[09:23:23] - [step:      18600] loss:  1.046e-02, time/iteration:  1.238e+02 ms
+[09:23:35] - [step:      18700] loss:  1.105e-02, time/iteration:  1.236e+02 ms
+[09:23:48] - [step:      18800] loss:  1.079e-02, time/iteration:  1.238e+02 ms
+[09:24:00] - [step:      18900] loss:  1.132e-02, time/iteration:  1.236e+02 ms
+[09:24:14] - [step:      19000] record validators time:  8.173e-01s
+[09:24:14] - [step:      19000] saved checkpoint to outputs/helmholtz
+[09:24:14] - [step:      19000] loss:  1.044e-02, time/iteration:  1.377e+02 ms
+[09:24:26] - [step:      19100] loss:  1.038e-02, time/iteration:  1.234e+02 ms
+[09:24:38] - [step:      19200] loss:  1.072e-02, time/iteration:  1.235e+02 ms
+[09:24:51] - [step:      19300] loss:  1.251e-02, time/iteration:  1.236e+02 ms
+[09:25:03] - [step:      19400] loss:  1.026e-02, time/iteration:  1.235e+02 ms
+[09:25:15] - [step:      19500] loss:  1.053e-02, time/iteration:  1.236e+02 ms
+[09:25:28] - [step:      19600] loss:  1.065e-02, time/iteration:  1.239e+02 ms
+[09:25:40] - [step:      19700] loss:  1.117e-02, time/iteration:  1.235e+02 ms
+[09:25:53] - [step:      19800] loss:  1.128e-02, time/iteration:  1.237e+02 ms
+[09:26:05] - [step:      19900] loss:  9.953e-03, time/iteration:  1.237e+02 ms
+[09:26:18] - [step:      20000] record constraint batch time:  5.524e-02s
+[09:26:19] - [step:      20000] record validators time:  8.321e-01s
+[09:26:19] - [step:      20000] saved checkpoint to outputs/helmholtz
+[09:26:19] - [step:      20000] loss:  1.023e-02, time/iteration:  1.387e+02 ms
+[09:26:19] - [step:      20000] reached maximum training steps, finished training!
+ Command executed in 3858.290s                                                                      
